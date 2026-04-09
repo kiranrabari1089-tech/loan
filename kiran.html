@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanAI Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+        <h1>💰 LoanAI</h1>
+        <p class="subtitle">Smart Loan Approval System</p>
+
+        <input type="text" id="name" placeholder="Customer Name">
+        <input type="number" id="income" placeholder="Monthly Income">
+        <input type="number" id="credit" placeholder="Credit Score">
+        <input type="number" id="loan" placeholder="Loan Amount">
+        <input type="number" id="rate" placeholder="Interest Rate (%)">
+        <input type="number" id="time" placeholder="Loan Tenure (months)">
+
+        <button onclick="checkLoan()">Analyze</button>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+        <h2>📊 Insights</h2>
+
+        <div class="box">
+            <h3>Status</h3>
+            <p id="status">--</p>
+        </div>
+
+        <div class="box">
+            <h3>Reason</h3>
+            <p id="reason">--</p>
+        </div>
+
+        <div class="box">
+            <h3>Suggestion</h3>
+            <p id="suggestion">--</p>
+        </div>
+
+        <div class="box">
+            <h3>EMI</h3>
+            <p id="emi">--</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
